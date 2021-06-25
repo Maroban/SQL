@@ -132,3 +132,28 @@ SELECT
            salary) "rSalay"
 FROM
     employees;
+    
+/* Join */
+-- 별칭 X
+SELECT
+    employees.department_id,
+    first_name,
+    department_name
+FROM
+    departments,
+    employees
+WHERE
+    employees.department_id = departments.department_id;
+    
+-- 별칭 O
+SELECT
+    first_name,
+    department_name,
+    em.hire_date,
+    de.department_id,
+    em.manager_id
+FROM
+    departments de,
+    employees em
+WHERE
+    em.department_id = de.department_id;
