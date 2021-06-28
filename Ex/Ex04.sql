@@ -77,3 +77,19 @@ FROM
     employees  man
 WHERE
     e.manager_id = man.employee_id;
+    
+-- subQuery
+SELECT
+    first_name,
+    salary
+FROM
+    employees
+WHERE
+    salary > (
+        SELECT
+            salary
+        FROM
+            employees
+        WHERE
+            first_name = 'Den'
+    );
