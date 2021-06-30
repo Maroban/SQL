@@ -126,7 +126,7 @@ FROM
     author;
     
     
-/** 실습 **/
+/*** 실습 ***/
 
 /* 테이블 삭제 */
 DROP TABLE book;
