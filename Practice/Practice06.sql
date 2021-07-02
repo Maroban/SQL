@@ -76,7 +76,7 @@ INSERT INTO book VALUES (
     seq_book_id.NEXTVAL,
     '우리들의 일그러진 영웅',
     '다림',
-    1998 - 02 - 22,
+    '1998-02-22',
     1
 );
 
