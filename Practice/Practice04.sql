@@ -135,11 +135,6 @@ ORDER BY
 
 -- 문제 6
 SELECT
-    MAX(salary) ms
-FROM
-    employees;
-
-SELECT
     job_title,
     se.ss
 FROM
@@ -159,14 +154,6 @@ ORDER BY
     se.ss DESC;
 
 -- 문제 7
-SELECT
-    department_id,
-    round(AVG(salary), 0) ras
-FROM
-    employees
-GROUP BY
-    department_id;
-
 SELECT
     e.employee_id,
     e.first_name,
